@@ -1,0 +1,228 @@
+<h1 class="center">{{ lfzTitle[0] }}</h1>
+<div class="panel panel-default" data-ng-if="view">
+    <div class="panel-heading">
+        <h2>Introduction &amp; Links</h2>
+    </div>
+    <div class="panel-body">
+        <p class="description" data-ng-bind-html="description"></p>
+        <hr>
+        <ul>
+            <li data-ng-repeat="(key, val) in links"><b>{{ key }}(s)</b>
+                <ul>
+                    <li data-ng-repeat="(title, href) in val">{{ title }} - <a href="{{ href }}" target="_blank">{{ key }} Link</a></li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+        <ul>
+            <li data-ng-repeat="(name, info) in demo"><b>{{ name }}</b>
+                <ul>
+                    <li data-ng-if="info.live">{{info.title}} - <a href="{{ info.link }}" target="_blank">Video Link</a></li>
+                    <li data-ng-if="!info.live">{{ info.title }} - <span class="label label-warning">Coming Soon!</span></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="panel panel-default" data-ng-if="view">
+    <div class="panel-heading">
+        <h2>Code Setup Details</h2>
+    </div>
+    <div class="panel-body">
+        <ol>
+            <li class="h4">Video Overview For GitHub Workflow - <a href="https://m.youtube.com/watch?v=VyCd8d5SQW4&feature=youtu.be" target="_blank">View Here</a></li>
+            <li class="h4">Open PHPStorm
+                <ul class="left-border normalize code-body">
+                    <li>The <code>lfz</code> folder should be your main working directory
+                        <img src="assets/images/github/lfz-folder.png" alt="lfz folder as working project directory" class="img-rounded img-responsive">
+                    </li>
+                </ul>
+            </li>
+            <li class="h4">Fork Repository
+                <ol class="left-border nested-1 normalize">
+                    <li>Navigate to the LearningFuze <b>{{repoName }}</b> Repository in your browser - Found <a href="https://github.com/Learning-Fuze/{{ repoName }}" target="_blank">HERE</a></li>
+                    <li>Click on the <span class="label label-default">Fork</span> button located in the top right corner of the page
+                        <ul>
+                            <li>Forking the repository or Repo will give you a copy of this repo under your own GitHub user account. We will be starting with a Learning-Fuze account repo.</li>
+                        </ul>
+                    </li>
+                    <img src="assets/images/github/fork.jpg" alt="Image of fork button location on GitHub" class="img-rounded img-responsive">
+                </ol>
+            </li>
+            <li class="h4">Download the zipped {{ repoName }} files
+                <ol class="left-border normalize">
+                    <li>Click on the <span class="label label-default">Download ZIP</span> button
+                        <img src="assets/images/github/download-zip.png" alt="Download ZIP button on github">
+                    </li>
+                    <li>Unzip the files and place the <b>{{ repoName }}-master</b> folder into your lfz folder</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2>Coding Instructions</h2>
+    </div>
+    <div class="panel-body">
+        <data-ng-transclude></data-ng-transclude>
+    </div>
+</div>
+
+<div class="panel panel-default" data-ng-if="view">
+    <div class="panel-heading">
+        <h2>After Coding Details</h2>
+    </div>
+    <div class="panel-body after-coding">
+        <ol>
+            <li class="h4">Create a feature branch on GitHub
+                <ol class="left-border normalize nested-1">
+                    <li>Navigate to <b>your</b> {{ repoName }} repo</li>
+                    <li>Click on the <span class="label label-default">Branch: master</span> button<br>
+                        <ul>
+                            <li><span class="label label-danger">Important!</span> If you are on a branch other than <code>master</code> look down the list and select <code>master</code> to switch to the <code>master</code> branch</li>
+                            <li>For the <b>{{ repoName }}</b> repo, all new branches will be made from the <code>master</code> branch</li>
+                        </ul>
+                        <img src="assets/images/github/new-branch-btn.png" alt="Branch button location on github" class="img-rounded img-responsive">
+                    </li>
+                    <li>Enter the branch name: <code>{{ branch }}</code> into the input field
+                        <img src="assets/images/github/branch-input.png" alt="Branch input field on github">
+                    </li>
+                    <li>Click on the <span class="label label-info">Create branch: {{ branch }}</span> button
+                        <img src="assets/images/github/create-branch-btn.png" alt="Create new branch button on github">
+                    </li>
+                </ol>
+            </li>
+            <li class="h4">Save files to GitHUb - Add all modified &amp; created files
+                <ol class="left-border normalize nested-1">
+                    <li>Still on the GitHub website at your {{ repoName }} repo</li>
+                    <li>Verify that you are now on the <code>{{ branch }}</code> branch. Look at the branch button and verify that it says <span class="label label-info">Branch: <b>{{ branch }}</b></span>
+                        <img src="assets/images/github/new-branch-btn.png" alt="Branch button location on github" class="img-rounded img-responsive">
+                    </li>
+                    <li>If on the correct branch locate the <code>{{ lfzTitle[1] }}</code> folder in the list of folders
+                        <img src="assets/images/github/folder-list.png" alt="List of folders example from github" class="img-rounded img-responsive">
+                    </li>
+                    <li>Click on the appropriate folder for this prototype. Verify you are now in the correct folder, should be something like:
+                        <br> <code>{{repoName + "/" + lfzTitle[1] + "/"}}</code>
+                        <img src="assets/images/github/folder-name.png" alt="Example folder name on github" class="img-rounded img-responsive">
+                    </li>
+                    <li>If on the correct branch and in the correct folder click on the <span class="label label-default">Upload Files</span> button
+                        <img src="assets/images/github/upload-btn.png" alt="GitHub upload button location" class="img-rounded img-responsive">
+                    </li>
+                    <li>Drag and drop all the files required for this prototype, or select them by clicking where it says <code>Choose your files</code>. You will see a list of all the files that you have added at the bottom of the drag and drop area
+                        <img src="assets/images/github/drag-n-drop.png" alt="Drag and drop page on github" class="img-rounded img-responsive">
+                    </li>
+                </ol>
+            </li>
+            <li class="h4">Package (group) all saved git files with a commit message
+                <ol class="left-border normalize">
+                    <li>Add a commit message to your files in the following format
+                        <ul>
+                            <li><code>"{{ lfzTitle[1] }} - Scott Bowler"</code>
+                                <ul>
+                                    <li><b>Scott Bowler</b> should be replaced with <b>your First &amp; Last name</b></li>
+                                    <li>Grouping files with a message allows those changes to be seen by others as a specific version of the code</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <img src="assets/images/github/commit-title.png" alt="Commit message location on github" class="img-rounded img-responsive">
+                    </li>
+                    <li>Triple check you are on the {{ branch }} branch
+                        <img src="assets/images/github/commit-branch.png" alt="Branch that is being commited to on github" class="img-rounded img-responsive">
+                    </li>
+                    <li>Click the <span class="label label-success">Commit changes</span> button
+                        <img src="assets/images/github/commit-changes-btn.png" alt="Commit changes button on github" class="img-rounded img-responsive">
+                    </li>
+                </ol>
+            </li>
+            <li class="h4">See if your feature fits with what everyone else was working on (Pull Request)
+                <ul class="left-border normalize">
+                    <h3>Step 4.1 Open your prototypes repo in the browser</h3>
+                    <ul>
+                        <li>The link should follow this format <b>https://github.com/[your-user-name]/{{ repoName }}</b></li>
+                    </ul>
+                    <hr>
+                    <h3>Step 4.2 Click <span class="label label-primary">Pull requests</span> tab to open the pull request list</h3>
+                    <img src="assets/images/github/pull-request-tab.png" alt="Pull request tab image" class="img-rounded img-responsive">
+                    <hr>
+                    <h3>Step 4.3 Click <span class="label label-success">New pull request</span> button</h3>
+                    <img src="assets/images/github/new-pull-request-btn.png" alt="New pull request button image" class="img-rounded img-responsive">
+                    <hr>
+                    <h3>Step 4.4 Compare Changes</h3>
+                    <p>During this step there are a hand full of highlighted things that need to be taken into consideration</p>
+                    <img src="assets/images/github/compare-changes.jpg" alt="Compare changes image" class="img-rounded img-responsive">
+                    <ol>
+                        <li><code>base fork: Learning-Fuze/{{ repoName }}</code>
+                            <ol>
+                                <li>For all prototypes this will always remain the same</li>
+                            </ol>
+                        </li>
+                        <li><code>base: root_username</code>
+                            <ol>
+                                <li>Here you will select the option that matches <b>YOUR</b> username</li>
+                                <li>If you can not locate an option that has your username, contact an instructor</li>
+                            </ol>
+                        </li>
+                        <li><code>head fork: [your_user_name]/{{ repoName }}</code>
+                            <ol>
+                                <li>Here you will select the option that matches your username / {{ repoName }}</li>
+                                <li>If you can not locate an option that has your username / {{ repoName }}, contact an instructor</li>
+                            </ol>
+                        </li>
+                        <li><code>compare: {{ branch }}</code>
+                            <ol>
+                                <li>Here you will locate the branch name (or feature name) you created at the beginning of the prototype</li>
+                                <li>This will usually be the same as the name of the prototype</li>
+                            </ol>
+                        </li>
+                        <li>Github.com will let you know if the code can be merged automatically (without needing a manual merge)
+                            <ol>
+                                <li>If the text says something other than "able to merge", <b>Contact an instructor</b></li>
+                                <li>Sometimes a manual merge is necessary, it just has a couple </li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <hr>
+                    <h3>Step 4.5 Add details into the pull request</h3>
+                    <ol>
+                        <li>Give the pull request a title, by default it's the name of the last commit (package) message that was saved
+                            <ol class="nested-1">
+                                <li>If you set the commit message above, you should get <b>{{ lfzTitle[1] }} - [your first &amp; last name]</b> already pre-populated in the <b>Title Field</b></li>
+                                <li>If there is a different title pre-populated, change the title to match the correct format:
+                                    <ol class="nested-2">
+                                        <li><b>{{ lfzTitle[1] }} - [your first &amp; last name]</b></li>
+                                    </ol></li>
+                            </ol>
+                        </li>
+                        <li><b>Don't assign a user.</b> (An Instructor will select who this gets assigned too)
+                            <ol class="nested-1">
+                                <li>Further into the cohort we will have students learn to review pull requests</li>
+                            </ol>
+                        </li>
+                        <li>Click on the <span class="label label-success">Create pull request</span> button</li>
+                    </ol>
+                    <img src="assets/images/github/create-pull-request.jpg" alt="Create pull request image" class="img-rounded img-responsive">
+                    <hr>
+                </ul>
+            </li>
+            <li class="h4">Collaborate on feedback
+                <ul class="left-border normalize">
+                    <li>Within the Github.com UI another developer or in this case an instructor will review the Pull Request you made - <b>Is your feature working.</b> Collaboration happens through Github UI &amp; the notifications are sent through email when when comments are added to pull requests.
+                        <ul>
+                            <li>Students should make modifications to their code based on the instructors feedback</li>
+                            <li>Instuctors will be giving an initial assessment based on the pull request. <b>Any additional collaboration after the instructor's initial feedback will be on a requested basis only.</b></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="h4">Pull request Closed
+                <ul class="left-border normalize">
+                    <li>In the LearningFuze workflow the pull requests are merged and closed to indicate assessment has been given to the student and recorded</li>
+                    <li>The pull request will be merged into your branch on the LearningFuze {{ repoName }} repo</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</div>
