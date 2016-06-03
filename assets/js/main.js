@@ -8,37 +8,37 @@ app.config(function($routeProvider, navigationProvider){
         Projects: [
             {
                 title: 'MBoutique-Assignment-4',
-                date: toTs('5/18/2018 8:00'),
+                date: toTs('6/16/2016 8:00:02'),
                 controller: 'mboutique4Controller',
                 template: 'featureSetsProjectR2.html'
             },
             {
                 title: 'MBoutique-Assignment-3',
-                date: toTs('5/17/2018 8:01'),
+                date: toTs('6/14/2016 8:00:02'),
                 controller: 'mboutique3Controller',
                 template: 'featureSetsProjectR2.html'
             },
             {
                 title: 'MBoutique-Assignment-2',
-                date: toTs('5/17/2018 8:00'),
+                date: toTs('6/14/2016 8:00:01'),
                 controller: 'mboutique2Controller',
                 template: 'featureSetsProjectR2.html'
             },
             {
                 title: 'MBoutique-Assignment-1',
-                date: toTs('5/16/2018 15:00'),
+                date: toTs('6/13/2016 8:00'),
                 controller: 'mboutique1Controller',
                 template: 'featureSetsProjectR.html'
             },
             {
                 title: 'Portfolio-V0.1',
-                date: toTs('5/9/2018 16:00'),
+                date: toTs('6/9/2016 8:00'),
                 controller: 'portfolio01Controller',
                 template: 'featureSetsProjectR.html'
             },
             {
                 title: 'Portfolio-V0.5',
-                date: toTs('5/18/2018 8:05'),
+                date: toTs('6/16/2016 8:00:01'),
                 controller: 'portfolio05Controller',
                 template: 'featureSetsProjectR2.html'
             }
@@ -52,37 +52,37 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'HTML-Responsive-Design',
-                date: toTs('5/17/2018 8:01'),
+                date: toTs('6/15/2016 8:00'),
                 controller: 'htmlResponsiveDesignController',
                 template: 'featureSetsR2.html'
             },
             {
                 title: 'HTML-Forms',
-                date: toTs('5/17/2018 08:00'),
+                date: toTs('6/12/2016 08:00'),
                 controller: 'htmlFormsController',
                 template: 'featureSetsR2.html'
             },
             {
                 title: 'HTML-Fundamentals-5',
-                date: toTs('5/10/2018 8:00'),
+                date: toTs('6/7/2016 8:00'),
                 controller: 'htmlFund5Controller',
                 template: 'featureSetsR2.html'
             },
             {
                 title: 'HTML-Fundamentals-4',
-                date: toTs('5/9/2018 16:00'),
+                date: toTs('6/6/2016 8:00'),
                 controller: 'htmlFund4Controller',
                 template: 'featureSetsR2.html'
             },
             {
                 title: 'HTML-Fundamentals-3',
-                date: toTs('6/4/2016 8:02'),
+                date: toTs('6/5/2016 8:00:01'),
                 controller: 'htmlFund3Controller',
                 template: 'featureSetsR2.html'
             },
             {
                 title: 'HTML-Fundamentals-2',
-                date: toTs('6/4/2016 8:01'),
+                date: toTs('6/5/2016 8:00'),
                 controller: 'htmlFund2Controller',
                 template: 'featureSetsR2.html'
             },
@@ -96,31 +96,31 @@ app.config(function($routeProvider, navigationProvider){
         CSS: [
             {
                 title: 'CSS-Bootstrap-Redux',
-                date: toTs('5/18/2018 08:00'),
+                date: toTs('6/16/2016 08:00'),
                 controller: 'cssBsReduxController',
                 template: 'featureSetsR2.html'
             },
             {
                 title: 'CSS-Bootstrap-Grid',
-                date: toTs('5/17/2018 08:00'),
+                date: toTs('6/14/2016 08:00'),
                 controller: 'cssBsGridController',
                 template: 'featureSetsR2.html'
             },
             {
                 title: 'CSS-Selectors',
-                date: toTs('4/16/2018 08:00'),
+                date: toTs('6/11/2016 08:00'),
                 controller: 'cssSelectorsController',
                 template: 'featureSetsR2.html'
             },
             {
                 title: 'CSS-Design-Layout-2',
-                date: toTs('5/13/2018 08:01'),
+                date: toTs('6/10/2016 08:00:01'),
                 controller: 'cssLayout2Controller',
                 template: 'featureSetsR2.html'
             },
             {
                 title: 'CSS-Design-Layout-1',
-                date: toTs('5/13/2018 08:00'),
+                date: toTs('6/10/2016 08:00'),
                 controller: 'cssLayout1Controller',
                 template: 'featureSetsR2.html'
             }
@@ -316,7 +316,7 @@ app.config(function($routeProvider, navigationProvider){
         Tutorials: [
             {
                 title: 'Tutorials-Dev-Tools-Mobile-View',
-                date: toTs('5/7/2016 6:00'),
+                date: toTs('6/3/2016 7:00'),
                 controller: 'dtMobileViewController',
                 template: 'tutorials.html'
             }
@@ -324,7 +324,7 @@ app.config(function($routeProvider, navigationProvider){
         Example: [
             {
                 title: 'Example-1',
-                date: toTs('5/7/2016 5:00'),
+                date: toTs('6/3/2016 8:00'),
                 controller: 'exampleController',
                 template: 'featureSetsR.html'
             }
