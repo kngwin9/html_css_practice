@@ -120,7 +120,7 @@ app.config(function($routeProvider, navigationProvider){
             },
             {
                 title: 'CSS-Design-Layout-1',
-                date: toTs('6/10/2016 08:00'),
+                date: toTs('6/9/2016 08:00'),
                 controller: 'cssLayout1Controller',
                 template: 'featureSetsR2.html'
             }
