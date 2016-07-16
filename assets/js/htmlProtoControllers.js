@@ -24,7 +24,7 @@ app.controller('exampleController', function($scope){
     this.demo = {
         'Video Prototype Demo': {
             title: "HTML Fundamentals 1",
-            link: "https://www.youtube.com/watch?v=VyCd8d5SQW4",
+            link: "https://www.youtube.com/watch?v=A-2yaIcpaVU",
             live: true
         }
     };
