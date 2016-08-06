@@ -31,7 +31,7 @@ app.controller('exampleController', function($scope){
 
     this.features = {
         'Getting Started': {
-            html: "<ul class='left-border'><li><h4><a href='http://youtu.be/sTv5FArrVxU' target='_blank'>Watch This Video First</a></h4></li><li>This prototype is for example purposes only</li><li><b>DO NOT</b> actually complete this prototype</li><li>Only watch the video</li></ul>"
+            html: "<ul class='left-border'><li><h4><a href='https://www.youtube.com/watch?v=A-2yaIcpaVU' target='_blank'>Watch This Video First</a></h4></li><li>This prototype is for example purposes only</li><li><b>DO NOT</b> actually complete this prototype</li><li>Only watch the video</li></ul>"
         },
         'Feature Set 1 - HTML Basics': {
             html: "<ol class='left-border'><li>Create a html file inside the example folder<ol class='nested-1'><li>Insert the basic HTML structure tags (html, head, body)<ul><li><i>Also know as a HTML skeleton</i></li></ul></li></ol></li><li>Add a header and <code>h1</code> tag with the text: <code>This is a test header</code></li><li>Add 5 content sections inside the appropriate tag to make a paragraph<ol class='nested-1'><li>inside the content sections add <i>Lorem Ipsum</i> text from here - <a href='http://www.lipsum.com/feed/html' target='_blank'>http://www.lipsum.com/feed/html</a><ul><li><a href='http://www.lipsum.com/' target='_blank'>What is Lorem Ipsum</a></li></ul></li></ol></li></ol>"
