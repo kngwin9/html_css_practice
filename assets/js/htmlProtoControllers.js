@@ -17,7 +17,7 @@ app.controller('exampleController', function($scope){
             'Example Slides 1': '#Example'
         },
         Video: {
-            'Example Prototype Video': 'http://youtu.be/sTv5FArrVxU'
+            'Example Prototype Video': 'https://www.youtube.com/watch?v=A-2yaIcpaVU'
         }
     };
 
