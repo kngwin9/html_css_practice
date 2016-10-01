@@ -328,6 +328,14 @@ app.config(function($routeProvider, navigationProvider){
                 controller: 'exampleController',
                 template: 'featureSetsR.html'
             }
+        ],
+        Faqs : [
+            {
+                title: 'Faqs',
+                date: toTs('6/3/2016 8:00'),
+                controller: 'faqsController',
+                template: 'faqs.html'
+            }
         ]
     };
 
@@ -372,6 +380,10 @@ app.config(function($routeProvider, navigationProvider){
            templateUrl: 'assets/templates/default.html',
            controller: 'mainController'
        })
+    //    .when('/Faqs', {
+    //        templateUrl: 'assets/templates/faq.html',
+    //        controller: 'faqsController'
+    //    })
        .otherwise({
            redirectTo: '/'
        });

@@ -1,4 +1,5 @@
 app.controller("mainController", function($scope, navigation){
+    console.log('in app controller: ', navigation);
     this.view = true;
 
     $scope.sideNav = navigation.protoList;
