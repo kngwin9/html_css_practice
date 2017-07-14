@@ -1,0 +1,8 @@
+#header > ul > li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+#footer > ul > li {
+    list-style-type: none;
+}
