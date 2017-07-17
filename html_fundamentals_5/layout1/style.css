@@ -1,3 +1,15 @@
+#header {
+    height: 15vh;
+}
+
+#body {
+    height: 70vh;
+}
+
+#footer {
+    height: 15vh;
+}
+
 #header > ul > li {
     list-style-type: none;
     display: inline-block;
@@ -6,3 +18,4 @@
 #footer > ul > li {
     list-style-type: none;
 }
+
